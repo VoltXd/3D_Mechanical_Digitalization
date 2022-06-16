@@ -1,10 +1,20 @@
 #pragma once
 
+#include "SocketManager.h"
+
 using namespace System;
 
 namespace LibraryZephyr {
-	public ref class Class1
+	public class KreonZephyr
 	{
-		// TODO: Ajoutez ici vos méthodes pour cette classe.
+	public:
+		KreonZephyr();
+		~KreonZephyr();
+
+	private:
+		CSocketManager *socketManager;
+		char *calibrationFile;
+		bool kreonInitialized
+		
 	};
 }
